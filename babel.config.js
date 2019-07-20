@@ -1,19 +1,12 @@
+
 module.exports = {
-  presets: [
-    '@vue/app',
-    ['env',      //添加 babel-preset-env 配置 
-      {
-        'modules': false
-      }
-    ]
-  ],
+  presets: ['@vue/app'],
   "plugins": [
-      [
-        "component", 
-          {
+      ["component", {
       "libraryName": "mint-ui",
       "style": true
     }
   ]
-]
+],
+  "ignore":["./src/lib/mui/dist/js/*.js"]
 }
