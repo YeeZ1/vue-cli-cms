@@ -6,6 +6,7 @@ import search from './components/tabbar/search.vue'
 import newsList from './components/news/newsList.vue'
 import newsInfo from './components/news/newsInfo.vue'
 import sharePic from './components/sharepic/sharePic.vue'
+import photoInfo from './components/sharepic/photoInfo.vue'
 export default new VueRouter({
     routes:[
         {path:'/' , redirect:'/home'},
@@ -15,7 +16,8 @@ export default new VueRouter({
         {path:'/search' , component:search},
         {path:'/home/newsList' , component:newsList},
         {path:'/home/sharePic' , component:sharePic},
-        {path:'/home/newsInfo/:id' , component:newsInfo}
+        {path:'/home/newsInfo/:id' , component:newsInfo},
+        {path:'/home/photoInfo/:id' , component:photoInfo}
     ],
     linkActiveClass:'mui-active'
 })
